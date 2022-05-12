@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "76739647621",
+    "project_id": "mynotes-mashaole",
+    "storage_bucket": "mynotes-mashaole.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76739647621:android:7e938e6a53591b487eb1ec",
+        "android_client_info": {
+          "package_name": "com.iampresenting.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76739647621-51qr6juic53j1d44gqomakpdse1agqjv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcoF9mwAYKkEk_FMub5A6Ql-MJXMLLpH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76739647621-51qr6juic53j1d44gqomakpdse1agqjv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
