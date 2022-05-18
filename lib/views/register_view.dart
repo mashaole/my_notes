@@ -57,19 +57,24 @@ class _RegisterViewState extends State<RegisterView> {
               final email = _email.text;
               final password = _password.text;
               try {
-                AuthService.firebase().createUser(
+                await AuthService.firebase().createUser(
                   email: email,
                   password: password,
                 );
 
-                AuthService.firebase().sendEmailVerification();
+                await AuthService.firebase().sendEmailVerification();
                 Navigator.of(context).pushNamed(verifyEmailRoute);
+              } on InvalidEmailAuthException {
+                await showErrorDialog(
+                  context,
+                  'Invalid Email',
+                );
               } on WeakPasswordAuthException {
                 await showErrorDialog(
                   context,
                   'Weak Password',
                 );
-              } on InvalidEmailAuthException {
+              } on EmailAlreadyInUseAuthException {
                 await showErrorDialog(
                   context,
                   'User Already Exists',

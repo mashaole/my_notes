@@ -55,11 +55,11 @@ class _LoginViewState extends State<LoginView> {
               final email = _email.text;
               final password = _password.text;
               try {
-                AuthService.firebase().logIn(
+                await AuthService.firebase().logIn(
                   email: email,
                   password: password,
                 );
-                final user = AuthService.firebase().currentUser;
+                final user = await AuthService.firebase().currentUser;
                 if (user?.isEmailVerified ?? false) {
                   //user email is Verified
                   Navigator.of(context).pushNamedAndRemoveUntil(
