@@ -31,7 +31,6 @@ class NotesService {
         } else {
           throw UserShouldBeSetBeforeReadingAllNotes();
         }
-        return true;
       });
   Future<DatabaseUser> getOrCreateUser({
     required String email,

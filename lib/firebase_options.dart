@@ -53,7 +53,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '76739647621',
     projectId: 'mynotes-mashaole',
     storageBucket: 'mynotes-mashaole.appspot.com',
-    iosClientId: '76739647621-gqq7j2i6vhbefc1l4rce6l15192b6ffe.apps.googleusercontent.com',
+    iosClientId:
+        '76739647621-gqq7j2i6vhbefc1l4rce6l15192b6ffe.apps.googleusercontent.com',
     iosBundleId: 'com.iampresenting.mynotes',
   );
 }
